@@ -1,3 +1,4 @@
+
 name: First Workflow
 
 on:
@@ -7,9 +8,11 @@ on:
 
 jobs:
   print-message:
-    runs-on: ubuantu-latest
-      steps:
-        -name: print welcome message
-         run: echo 'Welcome to github action'
-        -name: print Hello message
-         run: echo 'Hello ...'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print welcome message
+        run: echo 'Welcome to GitHub Actions'
+
+      - name: Print Hello message
+        run: echo 'Hello ...'
+
