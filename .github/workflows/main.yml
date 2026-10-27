@@ -1,1 +1,15 @@
+name: First Workflow
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuantu-latest
+      steps:
+        -name: print welcome message
+         run: echo 'Welcome to github action'
+        -name: print Hello message
+         run: echo 'Hello ...'
